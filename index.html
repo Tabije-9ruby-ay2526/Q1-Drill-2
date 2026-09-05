@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SRl4dKxUfVJ47J16c9rGzW0b7P4J8cLH7qQn0kuIAvLWz8Et5yBUjZqLb" crossorigin="anonymous">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Drill 2</title>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Arithmetic Operations</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <form class="myForm">
+                    <input type="number" id="num1" placeholder="Enter the first number" class="form-control">
+                    <input type="number" id="num2" placeholder="Enter the second number" class="form-control"><br>
+
+                    <center>
+                        <input type="button" class="btn btn-warning mt-3" py-click="addition" value="Add"><br>
+                        <input type="button" class="btn btn-warning mt-3" py-click="subtraction" value="Subtract"><br>
+                        <input type="button" class="btn btn-warning mt-3" py-click="multiplication" value="Multiply"><br>
+                        <input type="button" class="btn btn-warning mt-3" py-click="exponentiation" value="Exponential"><br>
+                        <input type="button" class="btn btn-warning mt-3" py-click="division" value="Divide"><br>
+                        <input type="button" class="btn btn-warning mt-3" py-click="floor_division" value="Floor Division"><br>
+                        <input type="button" class="btn btn-warning mt-3" py-click="get_remainder" value="Get Remainder"><br>
+                    </center>
+                </form>
+
+                <div id="result" class="mt-4" style="background: white; color: black;"></div>
+            </div>
+        </div>
+    </div>
+
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
